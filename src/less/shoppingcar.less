@@ -1,0 +1,191 @@
+.display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main{
+    padding:40px 0;
+    margin:0 auto;
+    h3{
+        font:normal 20px normal;
+     }
+}
+.main-shopping{
+    margin:25px;
+    width:92%;
+    border:1px solid #aaa;
+    box-sizing: border-box;
+    input[type=checkbox]{
+        opacity:0;
+        width:30px;
+        height:30px;
+        float:left;
+        left:20px;
+    }
+    .shop-icon{
+        width:16px;
+        height:16px;
+        background:url('../images/sprites.png') -412px -46px;
+    }
+    .buy-icon{
+        width:16px;
+        height:16px;
+        background:url('../images/sprites.png') -412px -100px;
+    }
+    .shop-top{
+        padding:0 40px;
+        width:100%;
+        height:50px;
+        box-sizing: border-box;
+        .display;
+     
+    }
+    .shop-center{
+        color:#666;
+        border-top: 1px solid #ccc;
+        padding:10px 40px;
+        .display;
+        .shopInfo{
+            text-align: center;
+            .fl{
+                img{
+                    width: 78px;
+                    height: 52px;
+                    border: 1px solid #ccc;
+                    display: block;
+                    margin: 0 auto;
+                }
+                p{
+                    margin-top:8px;
+                    a{
+                        font-size:12px;
+                        color:#666;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+    
+                    }
+                }
+                
+            }
+            .fr{
+                margin-left:25px;
+                font-size:12px;
+                
+                 p{
+                     margin-top:8px;
+                     
+                 }
+            }
+        }
+        .unit-price{
+            margin-left:5px;
+        }
+        .count{
+            font-size:20px;
+            color:#000;
+            .subtract{
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+            .add{
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+            input{
+                width: 36px;
+                height: 26px;
+                text-align: center;
+                border: 1px solid #ccc;
+                margin:0 10px;
+            }
+        }
+        .delete{
+            cursor:pointer;
+            &:hover{
+                color:red;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.total-prices{
+    width:89%;
+    height:55px;
+    line-height:55px;
+    margin:0 25px;
+    background: #dededd;
+    padding-left:40px;
+    input[type=checkbox]{
+        width:30px;
+        height:30px;
+        opacity:0;
+        float:left;
+        left:20px;
+    }
+    .shop-icon{
+        width:16px;
+        height:16px;
+        line-height:18px;
+        display: inline-block;
+        background:url('../images/sprites.png') -412px -46px;
+    }
+    .buy-icon{
+        display: inline-block;
+        width:16px;
+        height:16px;
+        background:url('../images/sprites.png') -412px -100px;
+    }
+    p{
+        display: inline-block;  
+    }
+    span{
+        color:#da251d;
+        font-size:22px;
+    }
+    .fr{
+        input{
+            width:138px;
+            height:55px;
+            background:#da251d;
+            color:#fff;
+            font-size:22px;
+            text-align: center;
+           }
+    }
+}
+.recommend{
+    width:100%;
+    margin:180px 0 60px;
+    .recommend-top{
+        height:40px;
+        padding-left:40px;
+        border-bottom:1px solid #aaa;
+        font-size:20px;
+        margin-bottom:20px;
+    }
+    .recommend-bottom{
+        width:100%;
+        text-align: center;
+        .display;
+        .recommend-img{
+            width:31%;
+            height:100%;
+            section{
+                width:100%;
+                height:389px;
+                border:1px solid #aaa;
+                margin-bottom:20px;
+            }
+            p{
+                font-size:18px;
+                span{
+                    font-size:24px;
+                }
+            }
+        }
+        
+    }
+}

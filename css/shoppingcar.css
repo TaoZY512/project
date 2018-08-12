@@ -1,0 +1,195 @@
+.display {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+main {
+  padding: 40px 0;
+  margin: 0 auto;
+}
+main h3 {
+  font: normal 20px normal;
+}
+.main-shopping {
+  margin: 25px;
+  width: 92%;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
+.main-shopping input[type=checkbox] {
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  float: left;
+  left: 20px;
+}
+.main-shopping .shop-icon {
+  width: 16px;
+  height: 16px;
+  background: url('../images/sprites.png') -412px -46px;
+}
+.main-shopping .buy-icon {
+  width: 16px;
+  height: 16px;
+  background: url('../images/sprites.png') -412px -100px;
+}
+.main-shopping .shop-top {
+  padding: 0 40px;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.main-shopping .shop-center {
+  color: #666;
+  border-top: 1px solid #ccc;
+  padding: 10px 40px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.main-shopping .shop-center .shopInfo {
+  text-align: center;
+}
+.main-shopping .shop-center .shopInfo .fl img {
+  width: 78px;
+  height: 52px;
+  border: 1px solid #ccc;
+  display: block;
+  margin: 0 auto;
+}
+.main-shopping .shop-center .shopInfo .fl p {
+  margin-top: 8px;
+}
+.main-shopping .shop-center .shopInfo .fl p a {
+  font-size: 12px;
+  color: #666;
+}
+.main-shopping .shop-center .shopInfo .fl p a:hover {
+  text-decoration: underline;
+}
+.main-shopping .shop-center .shopInfo .fr {
+  margin-left: 25px;
+  font-size: 12px;
+}
+.main-shopping .shop-center .shopInfo .fr p {
+  margin-top: 8px;
+}
+.main-shopping .shop-center .unit-price {
+  margin-left: 5px;
+}
+.main-shopping .shop-center .count {
+  font-size: 20px;
+  color: #000;
+}
+.main-shopping .shop-center .count .subtract:hover {
+  cursor: pointer;
+}
+.main-shopping .shop-center .count .add:hover {
+  cursor: pointer;
+}
+.main-shopping .shop-center .count input {
+  width: 36px;
+  height: 26px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+}
+.main-shopping .shop-center .delete {
+  cursor: pointer;
+}
+.main-shopping .shop-center .delete:hover {
+  color: red;
+  text-decoration: underline;
+}
+.total-prices {
+  width: 89%;
+  height: 55px;
+  line-height: 55px;
+  margin: 0 25px;
+  background: #dededd;
+  padding-left: 40px;
+}
+.total-prices input[type=checkbox] {
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  float: left;
+  left: 20px;
+}
+.total-prices .shop-icon {
+  width: 16px;
+  height: 16px;
+  line-height: 18px;
+  display: inline-block;
+  background: url('../images/sprites.png') -412px -46px;
+}
+.total-prices .buy-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url('../images/sprites.png') -412px -100px;
+}
+.total-prices p {
+  display: inline-block;
+}
+.total-prices span {
+  color: #da251d;
+  font-size: 22px;
+}
+.total-prices .fr input {
+  width: 138px;
+  height: 55px;
+  background: #da251d;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+}
+.recommend {
+  width: 100%;
+  margin: 180px 0 60px;
+}
+.recommend .recommend-top {
+  height: 40px;
+  padding-left: 40px;
+  border-bottom: 1px solid #aaa;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.recommend .recommend-bottom {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.recommend .recommend-bottom .recommend-img {
+  width: 31%;
+  height: 100%;
+}
+.recommend .recommend-bottom .recommend-img section {
+  width: 100%;
+  height: 389px;
+  border: 1px solid #aaa;
+  margin-bottom: 20px;
+}
+.recommend .recommend-bottom .recommend-img p {
+  font-size: 18px;
+}
+.recommend .recommend-bottom .recommend-img p span {
+  font-size: 24px;
+}

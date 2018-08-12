@@ -1,0 +1,1087 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+ul,
+li {
+  list-style: none;
+}
+input,
+button {
+  outline: none;
+  border: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearFix {
+  zoom: 1;
+}
+.clearFix:after {
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.flex-row-col-cen {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body {
+  width: 100%;
+}
+.minwidth {
+  width: 100%;
+  min-width: 1280px;
+}
+.maxwidth {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.padding {
+  padding: 0 3%;
+}
+#header {
+  width: 100%;
+  min-width: 1280px;
+  height: 295px;
+  background: url(http://localhost:8050/static/images/bg_header.jpg) center center no-repeat;
+}
+#header .header-top {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#header .header-top .header-top-img {
+  width: 221px;
+  height: 53px;
+  background: url(http://localhost:8050/static/images/sprites.png) 0px -138px;
+  cursor: pointer;
+}
+#header .header-top .header-top-img:hover {
+  background: url(http://localhost:8050/static/images/sprites.png) 0px -191px;
+}
+#header .header-center {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 170px;
+  position: relative;
+}
+#header .header-center .header-section-left {
+  margin: 0 auto;
+  width: 286px;
+  height: 83px;
+  background: url(http://localhost:8050/static/images/sprites.png) 0 -43px;
+}
+#header .header-center .header-section-right {
+  width: 200px;
+  height: 56px;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .header-center .header-section-right .right-one {
+  cursor: pointer;
+  width: 105px;
+  height: 37px;
+  background: url(http://localhost:8050/static/images/sprites.png) -230px -146px;
+}
+#header .header-center .header-section-right .right-one:hover {
+  background: url(http://localhost:8050/static/images/sprites.png) -230px -183px;
+}
+#header .header-center .header-section-right .right-two {
+  width: 56px;
+  height: 56px;
+  background: url(http://localhost:8050/static/images/sprites.png) -21px -434px;
+}
+#header .header-center .header-section-right .right-wire {
+  width: 2px;
+  height: 37px;
+  background: #aaa;
+}
+#header .header-center .header-section-bottom {
+  width: 148px;
+  height: 36px;
+  margin: 30px auto;
+  z-index: 999;
+}
+#header .header-center .header-section-bottom .header-child {
+  color: #5b5b5b;
+  line-height: 36px;
+  border: 1px solid #aaa;
+  background: #fff;
+}
+#header .header-center .header-section-bottom .header-child .span-img {
+  margin-left: 15px;
+  display: inline-block;
+  width: 34px;
+  height: 24px;
+  background: url(http://localhost:8050/static/images/slt_0.png);
+}
+#header .header-center .header-section-bottom .header-child .span-img:hover {
+  background: url(http://localhost:8050/static/images/slt_0.png) 0 34px;
+}
+#header .header-center .header-section-bottom .header-child .shrink {
+  display: none;
+  text-align: center;
+}
+#header .header-center .header-section-bottom .header-child .shrink .shrink-only {
+  border-top: 1px solid #aaa;
+}
+#header .header-center .header-section-bottom .header-child .shrink li:hover {
+  background: #82c353;
+  color: #fff;
+}
+#header .header-bottom {
+  min-width: 1280px;
+  width: 100%;
+  height: 56px;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+#header .header-bottom .sub-menu {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 55px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+#header .header-bottom .sub-menu .icon {
+  position: relative;
+}
+#header .header-bottom .sub-menu .icon i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 5px;
+  top: 13px;
+  background: url(http://localhost:8050/static/images/sprites.png) -298px -45px;
+}
+#header .header-bottom .sub-menu .icon i:hover {
+  background: url(http://localhost:8050/static/images/sprites.png) -298px -79px;
+}
+#header .header-bottom .sub-menu li {
+  border: 1px solid transparent;
+  padding: 0 5px;
+  transition: all 0.5s linear;
+}
+#header .header-bottom .sub-menu li input {
+  width: 125px;
+  height: 30px;
+  border: 1px solid #aaa;
+  padding-left: 6px;
+  font-size: 16px;
+}
+#header .header-bottom .sub-menu li a {
+  display: inline-block;
+  color: #5b5b5b;
+  font-size: 18px;
+  font-weight: 500;
+}
+#header .header-bottom .sub-menu li:last-child {
+  position: relative;
+}
+#header .header-bottom .sub-menu li .sub-list {
+  border-top: 1px solid transparent;
+  width: 100%;
+  display: none;
+}
+#header .header-bottom .sub-menu li .sub-list li {
+  border: none;
+}
+#header .header-bottom .sub-menu li .sub-list li a {
+  color: #5b5b5b;
+  font-size: 15px;
+  font-weight: 500;
+}
+#header .header-bottom .sub-menu li .sub-list li:hover a {
+  color: #d92018;
+  text-decoration: underline;
+}
+#header .header-bottom .sub-menu li:not(:last-child):hover {
+  background: #fff;
+  border: 1px solid #aaa;
+}
+#header .header-bottom .sub-menu li:not(:last-child):hover a {
+  color: #d92018;
+}
+#header .header-bottom .sub-menu li:not(:last-child):hover .sub-list {
+  display: block;
+  border-top: 1px solid #d92018;
+}
+#header .header-bottom .sub-menu li:not(:last-child):hover .sub-list li {
+  border: none;
+}
+#header .header-bottom .sub-menu li:not(:last-child):hover .menu-list {
+  display: block;
+  border-top: 1px solid #d92018;
+}
+#header .header-bottom .sub-menu li:not(:last-child):hover .menu-list li {
+  border: none;
+}
+#header .header-bottom .sub-menu li .menu-list {
+  background: #fff;
+  border-top: 1px solid transparent;
+  width: 160px;
+  display: none;
+  text-align: center;
+}
+#header .header-bottom .sub-menu li .menu-list li {
+  display: inline-block;
+  border: none;
+}
+#header .header-bottom .sub-menu li .menu-list li a {
+  color: #5b5b5b;
+  font-size: 15px;
+  font-weight: 500;
+}
+#header .header-bottom .sub-menu li .menu-list li:hover a {
+  color: #d92018;
+  text-decoration: underline;
+}
+#header .header-bottom .sub-menu li .other {
+  width: 148px;
+}
+#footer {
+  height: 500px;
+  width: 100%;
+  min-width: 1280px;
+  position: relative;
+}
+#footer .title {
+  height: 70px;
+  width: 100%;
+  background: #7ec711;
+}
+#footer .title div {
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 8px;
+  color: whitesmoke;
+  line-height: 70px;
+}
+#footer .imgboxs {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+#footer .imgboxs > div {
+  background: url(http://localhost:8050/static/images/sprites.png);
+  background-position: -344px -133px;
+  position: absolute;
+  height: 97px;
+  width: 85px;
+  top: 30px;
+  color: whitesmoke;
+  font-size: 24px;
+  text-align: center;
+  line-height: 97px;
+}
+#footer .imgboxs .img1 {
+  left: 32%;
+}
+#footer .imgboxs .img2 {
+  left: 40%;
+}
+#footer .imgboxs .img3 {
+  left: 48%;
+}
+#footer .imgboxs .img4 {
+  left: 56%;
+}
+#footer .imgboxs .img5 {
+  left: 64%;
+}
+#footer .imgboxs span {
+  position: absolute;
+  bottom: 2px;
+  font-size: 13px;
+  color: #aaa;
+}
+#footer .imgboxs .span1 {
+  left: 32%;
+}
+#footer .imgboxs .span2 {
+  left: 40%;
+}
+#footer .imgboxs .span3 {
+  left: 48%;
+}
+#footer .imgboxs .span4 {
+  left: 56%;
+}
+#footer .imgboxs .span5 {
+  left: 64%;
+}
+#footer .about {
+  box-sizing: border-box;
+  padding-left: 5px;
+  height: 120px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+#footer .about .wrap {
+  width: 100%;
+  min-width: 1280px;
+}
+#footer .about .wrap a {
+  color: #5b5b5b;
+  font-size: 12px;
+}
+#footer .about .wrap a:hover {
+  text-decoration: underline;
+}
+#footer .about .wrap ul {
+  border-left: 1px solid #aaa;
+  float: left;
+  height: 120px;
+  padding: 0 3%;
+}
+#footer .about .wrap ul h3 {
+  margin-bottom: 5px;
+}
+#footer .about .wrap .contact li {
+  font-size: 12px;
+  color: #5b5b5b;
+}
+#footer .about .wrap .weibo {
+  padding: 0 3%;
+  height: 120px;
+  width: 160px;
+  float: left;
+  border-left: 1px solid #aaa;
+  position: relative;
+}
+#footer .about .wrap .weibo .weibotubiao {
+  background: url(http://localhost:8050/static/images/sprites.png);
+  background-position: -368px -46px;
+  position: absolute;
+  height: 29px;
+  width: 26px;
+}
+#footer .about .wrap .weibo span {
+  font-size: 12px;
+  margin-top: 20px;
+}
+#footer .about .wrap .weibo .tupian {
+  border-left: 1px solid #aaa;
+  background: url(http://localhost:8050/static/images/sprites.png);
+  background-position: -270px -238px;
+  height: 73px;
+  width: 73px;
+  margin: 5px auto;
+}
+#footer .about .wrap .weixin {
+  padding: 0 3%;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  height: 120px;
+  width: 160px;
+  float: left;
+  position: relative;
+}
+#footer .about .wrap .weixin .weixintubiao {
+  background: url(http://localhost:8050/static/images/sprites.png);
+  background-position: -368px -82px;
+  position: absolute;
+  height: 29px;
+  width: 26px;
+}
+#footer .about .wrap .weixin span {
+  font-size: 12px;
+  margin-top: 20px;
+}
+#footer .about .wrap .weixin .weixintupian {
+  border-left: 1px solid #aaa;
+  background: url(http://localhost:8050/static/images/sprites.png);
+  background-position: -357px -238px;
+  height: 73px;
+  width: 73px;
+  margin: 5px auto;
+}
+#footer .device {
+  width: 712px;
+  height: 38px;
+  text-align: center;
+  line-height: 38px;
+  background: #82c353;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.minwidth {
+  width: 100%;
+  min-width: 1280px;
+}
+.maxwidth {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+#main {
+  height: 950px;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin: auto;
+}
+#main .main-nav {
+  height: 50px;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  z-index: -11;
+  border-bottom: 1px solid silver;
+}
+#main .main-nav ul {
+  margin-top: 30px;
+}
+#main .main-nav ul li {
+  padding: 10px 40px;
+  float: left;
+}
+#main .main-nav ul li a {
+  color: black;
+  font-size: 21px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  padding: 10px 0px;
+  border-bottom: 1px solid white;
+}
+#main .main-nav ul li a:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+#main .matter {
+  display: none;
+}
+#main #main-message {
+  display: block;
+  height: 810px;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-left: 90px;
+  float: left;
+}
+#main #main-message span {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+#main #main-message .connection {
+  margin-top: 10px;
+  z-index: -11;
+}
+#main #main-message .connection .iptname {
+  border: 1px solid silver;
+  width: 120px;
+  height: 15px;
+  padding: 10px 10px;
+  font-size: 16px;
+  z-index: -11;
+}
+#main #main-message .connection .tel {
+  border: 1px solid silver;
+  width: 240px;
+  height: 15px;
+  padding: 10px 10px;
+  font-size: 16px;
+  z-index: -11;
+}
+#main #main-message .gender {
+  margin-top: 10px;
+}
+#main #main-message .gender div {
+  margin-top: 10px;
+}
+#main #main-message .gender div input {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+#main #main-message .gender div #woman {
+  margin-left: 40px;
+}
+#main #main-message .birthday {
+  margin-top: 20px;
+}
+#main #main-message .birthday .birthdaylist {
+  margin-top: 10px;
+}
+#main #main-message .birthday .birthdaylist form {
+  display: inline-block;
+}
+#main #main-message .birthday .birthdaylist .year {
+  height: 40px;
+  width: 130px;
+}
+#main #main-message .birthday .birthdaylist .year select {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 35px;
+}
+#main #main-message .birthday .birthdaylist .mouth {
+  height: 40px;
+  width: 80px;
+}
+#main #main-message .birthday .birthdaylist .mouth select {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+#main #main-message .birthday .birthdaylist .day {
+  height: 40px;
+  width: 80px;
+}
+#main #main-message .birthday .birthdaylist .day select {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+#main #main-message .furniture {
+  margin-top: 20px;
+}
+#main #main-message .furniture div {
+  margin-top: 10px;
+}
+#main #main-message .furniture div .furniture-style {
+  height: 40px;
+  width: 200px;
+}
+#main #main-message .furniture div .furniture-style select {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  padding: 0px 56px;
+}
+#main #main-message .culture {
+  margin-top: 20px;
+}
+#main #main-message .culture div {
+  margin-top: 10px;
+}
+#main #main-message .culture div .education {
+  height: 40px;
+  width: 200px;
+}
+#main #main-message .culture div .education select {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  padding: 0px 70px;
+}
+#main #main-message .work {
+  margin-top: 20px;
+}
+#main #main-message .work div {
+  margin-top: 10px;
+}
+#main #main-message .work div .industry {
+  height: 40px;
+  width: 200px;
+}
+#main #main-message .work div .industry select {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  padding: 0px 56px;
+}
+#main #main-message .site {
+  margin-top: 20px;
+}
+#main #main-message .site div {
+  margin-top: 10px;
+}
+#main #main-message .site div form {
+  display: inline-block;
+}
+#main #main-message .site div .region {
+  height: 40px;
+  width: 150px;
+}
+#main #main-message .site div .region select {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  padding: 0px 31px;
+}
+#main #main-message .site div .housenumber {
+  height: 40px;
+  width: 592px;
+  border: 1px solid silver;
+  padding: 0px 10px;
+  font-size: 16px;
+}
+#main #main-message .verify {
+  text-align: center;
+  margin-top: 50px;
+}
+#main #main-message .verify input {
+  height: 60px;
+  width: 400px;
+  color: whitesmoke;
+  font-size: 30px;
+  background: darkgray;
+  cursor: not-allowed;
+}
+#main #main-indent {
+  display: none;
+  height: 810px;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-left: 90px;
+}
+#main #main-indent #romovenor {
+  position: fixed;
+  height: 180px;
+  width: 473px;
+  z-index: 66;
+  padding: 60px 100px;
+  background: white;
+  left: 36%;
+  top: 30%;
+  border: 1px solid #dededd;
+  border-radius: 30px;
+  display: none;
+}
+#main #main-indent #romovenor h1 {
+  font-size: 20px;
+}
+#main #main-indent #romovenor div {
+  padding: 30px 60px;
+}
+#main #main-indent #romovenor div input {
+  height: 60px;
+  width: 160px;
+  font-size: 18px;
+  color: white;
+  background: #888888;
+  margin-left: 10px;
+}
+#main #main-indent #romovenor div input:hover {
+  background: #82c353;
+  cursor: pointer;
+}
+#main #main-indent .introduce {
+  height: 40px;
+  width: 950px;
+  float: left;
+  border: 1px solid silver;
+}
+#main #main-indent .introduce .order {
+  margin-left: 20px;
+  float: left;
+  text-align: center;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+#main #main-indent .introduce .order p {
+  height: 80px;
+  line-height: 80px;
+  width: 20%;
+  overflow: hidden;
+}
+#main #main-indent .introduce .order p img {
+  width: 80px;
+  height: 50px;
+}
+#main #main-indent .introduce .order p span {
+  display: inline-block;
+  height: 30px;
+}
+#main #main-indent .introduce > span {
+  margin-left: 70px;
+  line-height: 40px;
+  font-size: 18px;
+}
+#main #main-indent .introduce > div {
+  height: 80px;
+  width: 950px;
+  float: left;
+  border: 1px solid silver;
+}
+#main #main-indent .introduce > div .handle-box {
+  height: 60px;
+  width: 100px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+#main #main-indent .introduce > div .handle-box > div {
+  height: 30px;
+  width: 100px;
+}
+#main #main-indent .introduce > div .handle-box > div .find,
+#main #main-indent .introduce > div .handle-box > div .aftersale {
+  float: left;
+  cursor: pointer;
+  color: #888888;
+  text-align: center;
+}
+#main #main-indent .introduce > div .handle-box > div .find:hover,
+#main #main-indent .introduce > div .handle-box > div .aftersale:hover {
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+#main #main-indent .introduce > div .handle-box > div .handle-abolish {
+  float: right;
+  cursor: pointer;
+  color: #888888;
+}
+#main #main-indent .introduce > div .handle-box > div .handle-abolish:hover {
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+#main #main-indent .introduce > div .handle-box > div .handle-delete {
+  float: right;
+  cursor: pointer;
+  color: #888888;
+}
+#main #main-indent .introduce > div .handle-box > div .handle-delete:hover {
+  color: red;
+  text-decoration: underline;
+}
+#main #main-indent .introduce > div .handle-box .handle-box-top {
+  border-bottom: 1px solid silver;
+}
+#main #main-indent .introducebtn {
+  text-align: center;
+  line-height: 800px;
+}
+#main #main-indent .introducebtn input {
+  height: 60px;
+  width: 400px;
+  color: whitesmoke;
+  font-size: 30px;
+  background: darkgray;
+  cursor: pointer;
+  letter-spacing: 20px;
+}
+#main #main-indent .introducebtn input:hover {
+  background: #7ec711;
+}
+#main #main-sell {
+  display: none;
+  height: 810px;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-left: 90px;
+  float: left;
+}
+#main #main-sell .mySell input {
+  height: 60px;
+  width: 400px;
+  color: whitesmoke;
+  font-size: 30px;
+  background: darkgray;
+  cursor: pointer;
+}
+#main #main-sell .mySell input:hover {
+  background: #7ec711;
+}
+#main #main-sell .sell-introduce-box {
+  margin-top: 20px;
+  height: 40px;
+  width: 950px;
+  float: left;
+  border: 1px solid silver;
+}
+#main #main-sell .sell-introduce-box .sell-introduce span {
+  line-height: 40px;
+  margin-left: 50px;
+}
+#main #main-sell .sell-introduce-box > div {
+  height: 40px;
+  width: 950px;
+  float: left;
+}
+#main #main-sell .sell-introduce-box > div .operation {
+  float: right;
+  height: 80px;
+  width: 100px;
+}
+#main #main-sell .sell-introduce-box > div .operation .operation-top {
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  border-bottom: 1px solid #dededd;
+}
+#main #main-sell .sell-introduce-box > div .operation .operation-top > span {
+  line-height: 40px;
+  margin-left: 20px;
+}
+#main #main-sell .sell-introduce-box > div .operation .operation-bottom {
+  height: 40px;
+  width: 100px;
+  margin-top: 10px;
+}
+#main #main-sell .sell-introduce-box > div .operation .operation-bottom .operation-bottom-dell {
+  float: left;
+  height: 20px;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+  border-right: 1px solid #dededd;
+}
+#main #main-sell .sell-introduce-box > div .operation .operation-bottom .operation-bottom-cancel {
+  float: right;
+  height: 40px;
+  width: 46px;
+  cursor: pointer;
+  text-align: center;
+}
+#main #main-sell .sell-introduce-box .sell-introduce1,
+#main #main-sell .sell-introduce-box .sell-introduce2 {
+  height: 80px;
+  margin-top: -1px;
+  border: 1px solid #dededd;
+}
+#main #main-sell .sell-introduce-box .sell-introduce1 .sale,
+#main #main-sell .sell-introduce-box .sell-introduce2 .sale {
+  float: left;
+  text-align: right;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+#main #main-sell .sell-introduce-box .sell-introduce1 .sale p,
+#main #main-sell .sell-introduce-box .sell-introduce2 .sale p {
+  height: 80px;
+  line-height: 80px;
+  width: 18%;
+  overflow: hidden;
+}
+#main #main-sell .sell-introduce-box .sell-introduce1 .sale p img,
+#main #main-sell .sell-introduce-box .sell-introduce2 .sale p img {
+  width: 50px;
+  height: 50px;
+}
+#main #main-sell .sell-introduce-box .sell-introduce1 .sale p span,
+#main #main-sell .sell-introduce-box .sell-introduce2 .sale p span {
+  display: block;
+}
+#main #main-sell .sell-introduce-box .sell-introduce2 .operation .operation-top {
+  color: #e3e9ef;
+  cursor: no-drop;
+}
+#main #main-sell .sell-introduce-box .sell-introduce2 .operation .operation-bottom .operation-bottom-cancel {
+  color: #e3e9ef;
+  cursor: no-drop;
+}
+#main #main-sell #depreciate {
+  display: none;
+  height: 500px;
+  width: 800px;
+  border-radius: 20px;
+  position: fixed;
+  top: 30%;
+  left: 25%;
+  background: #e3e9ef;
+}
+#main #main-sell #depreciate .depreciate-content {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#main #main-sell #depreciate .depreciate-content > span {
+  font-size: 18px;
+}
+#main #main-sell #depreciate .depreciate-content .depreciate-content-indent {
+  color: red;
+  margin-left: 26px;
+}
+#main #main-sell #depreciate .depreciateprices {
+  height: 350px;
+  width: 650px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 20px;
+}
+#main #main-sell #depreciate .depreciateprices .depreciatenowprice,
+#main #main-sell #depreciate .depreciateprices .depreciatealterprice {
+  padding: 35px 70px;
+}
+#main #main-sell #depreciate .depreciateprices .depreciatenowprice span,
+#main #main-sell #depreciate .depreciateprices .depreciatealterprice span {
+  font-size: 22px;
+}
+#main #main-sell #depreciate .depreciateprices .depreciatealterprice input {
+  height: 20px;
+  width: 150px;
+  padding: 5px 10px;
+  border: 1px solid #888888;
+}
+#main #main-sell #depreciate .depreciateprices .depreciatebtns {
+  width: 400px;
+  height: 60px;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+#main #main-sell #depreciate .depreciateprices .depreciatebtns input {
+  height: 50px;
+  width: 170px;
+  color: white;
+  background: #888888;
+  font-size: 18px;
+  letter-spacing: 10px;
+  cursor: pointer;
+}
+#main #main-sell #depreciate .depreciateprices .depreciatebtns input:hover {
+  background: #82c353;
+}
+#main #main-account {
+  display: none;
+  height: 300px;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-left: 90px;
+  float: left;
+  background: #dededd;
+}
+#main #main-account > span {
+  padding: 0px 30px;
+  line-height: 60px;
+  font-size: 18px;
+}
+#main #main-account .main-account-content {
+  height: 88px;
+  width: 825px;
+  margin: auto;
+  padding: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background: white;
+}
+#main #main-account .main-account-content .account-num {
+  font-size: 50px;
+}
+#main #main-account .main-account-content .account-hint {
+  margin-left: 40px;
+}
+#main #main-account .main-account-content .rule {
+  float: right;
+  margin-top: 38px;
+}
+#main #main-account .main-account-content .rule a {
+  color: cornflowerblue;
+}
+#main #main-information {
+  display: none;
+  height: 470px;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-left: 90px;
+  float: left;
+  background: #dededd;
+}
+#main #main-information > span {
+  padding: 0px 30px;
+  line-height: 60px;
+  font-size: 18px;
+}
+#main #main-information .information-content div {
+  height: 80px;
+  width: 85%;
+  border: 1px solid silver;
+  background: white;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+#main #main-information .information-content .information {
+  float: left;
+}
+#main #main-information .information-content .information p {
+  margin: 0 50px;
+  width: 80%;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#main #main-information .information-content .information span {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+}
+#main #main-information .information-delete {
+  height: 360px;
+  width: 10%;
+  float: right;
+  margin-top: -360px;
+}
+#main #main-information .information-delete div {
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+}
+#main #main-information .information-delete div .sign {
+  height: 16px;
+  width: 16px;
+  float: left;
+  margin-top: 33px;
+}
+#main #main-information .information-delete .information-delete2,
+#main #main-information .information-delete .information-delete3,
+#main #main-information .information-delete .information-delete4 {
+  margin-top: 10px;
+}
+#main #main-information > input {
+  height: 60px;
+  width: 400px;
+  color: whitesmoke;
+  font-size: 30px;
+  background: darkgray;
+  cursor: pointer;
+  letter-spacing: 20px;
+  float: right;
+  margin-top: 100px;
+}
+#main #main-information > input:hover {
+  background: #7ec711;
+}

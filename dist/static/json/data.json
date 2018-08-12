@@ -1,0 +1,109 @@
+{
+  "title":{
+      "sofa":"沙发&nbsp&nbsp SOFAS",
+      "tableAndChair":"桌椅&nbsp&nbspTABLES/CHAIRS",
+      "bed":"床&nbsp&nbspBEDS",
+      "storge":"柜&nbsp&nbspSTORAGE",
+      "more":"更多&nbsp&nbsp MORE"
+  },
+  "header": 
+    {
+      "sofa": ["单人位","双人位","三人位","休闲沙发","转角沙发"],
+    
+      "tableAndChair":["全部","餐桌","书桌","电脑桌","梳妆台","餐椅","凳子","休闲椅","户外椅","其他"],
+   
+      "bed":["全部","1.5M床","1.8M床","其他"],
+    
+      "storge":["全部","衣柜","储物柜","电视柜","书柜","鞋柜","床头柜","其他"],
+   
+      "more":["全部","全部","组合","家居","其他"]
+    },
+    "order":[
+      {
+        "pic":"example_0.jpg",
+        "newPrice": "￥620",
+        "orderTime": "2015-08-02",
+        "deliveryTime": "2015-08-03",
+        "stute": "送货中"
+      }
+    ],
+    "sale":[
+      {
+        "pic":"example_0.jpg",
+        "newPrice": "￥620",
+        "orderTime": "2015-08-02",
+        "deliveryTime": "2015-08-03",
+        "retention": "户里",
+        "stute": "售卖中",
+        "back": "是"
+      }
+    ],
+  "system":[
+    {
+      "systemDate": "2015-8-11",
+      "systemTime": "22:48:26",
+      "systemMessages": "在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。"
+    }
+  ],
+  "infos": [
+    {
+      "pic":"example_0.jpg",
+      "sofaName": "沙发",
+      "introduce": "三人位&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp9成新以上",
+      "sofaPrice": "￥480",
+      "oldPrice": "￥2558 ",
+      "oldprice": "￥580",
+      "integral": " 6.8",
+      "inventory": " 5",
+      "serve": "户里服务： 该商品在仓库，23点前完成下单可在后天（5月15日）送达/该商品在用户家中，23点前完成下单，可在（5天后）送达",
+      "sofasize": "1260*760*560mm",
+      "texture": "实木/布艺",
+      "sofacolor": "亚麻色",
+      "deliver": "成都市绕城内满699元可享受免费送货政策，未满金额或者绕城外地区收取99元运费。",
+      "imgs":[
+        "example_6.jpg",
+        "example_7.jpg",
+        "example_9.jpg",
+        "example_10.jpg",
+        "example_11.jpg"
+      ]
+    },
+    {
+      "pic":"example_0.jpg",
+      "sofaName": "组合产品",
+      "introduce": "[沙发+茶几+餐桌+餐椅+床+衣柜] | 7-9成新",
+      "sofaPrice": "¥59323",
+      "oldPrice": "60323 元",
+      "oldprice": "¥60323",
+      "integral": " 6.8",
+      "inventory": "3",
+      "serve": "户里服务： 该商品为用户自留，下单后5日内送达",
+      "sofasize": "尺寸： 1260*760*560mm",
+      "texture": "材质： 实木/布艺",
+      "sofacolor": "颜色： 亚麻色",
+      "deliver": "成都市绕城内满699元可享受免费送货政策，未满金额或者绕城外地区收取99元运费。" ,
+      "imgs":[
+        "example_1.jpg",
+        "example_2.jpg",
+        "example_3.jpg",
+        "example_4.jpg",
+        "example_8.jpg"
+      ]
+    },
+    {
+      "pic":"example_0.jpg",
+      "sofaName": "商品名称",
+      "sofaPrice": "¥60323"
+    },
+    {
+      "pic":"example_0.jpg",
+      "sofaName": "商品名称",
+      "sofaPrice": "¥60323"
+    },
+    {
+      "pic":"example_0.jpg",
+      "sofaName": "商品名称",
+      "sofaPrice": "¥60323"
+    }
+  ]
+}

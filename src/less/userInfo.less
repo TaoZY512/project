@@ -1,0 +1,642 @@
+.minwidth{
+    width: 100%;
+    min-width: 1280px;
+}
+.maxwidth{
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+#main{
+    height: 950px;
+    .maxwidth;
+    margin: auto;
+    .main-nav{
+        height: 50px;
+        .maxwidth;
+        z-index: -11;
+        border-bottom: 1px solid silver;
+        ul{
+            margin-top: 30px;
+            li{
+                padding: 10px 40px;
+                
+                float: left;
+                a{
+                    color: black;
+                    font-size: 21px;
+                    font-family: "微软雅黑";
+                    padding: 10px 0px;
+                    border-bottom: 1px solid white;
+                    &:hover{
+                        color: red;
+                        border-bottom: 2px solid red;
+                    }
+                }
+            }
+        }
+    }
+    .matter{
+        display: none;
+    }
+    #main-message{
+        display: block;
+        height: 810px;
+        .maxwidth;
+        margin-top: 40px;
+        margin-left: 90px;
+        float: left;
+        span{
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        
+        .connection{
+            margin-top: 10px;
+            z-index: -11;
+            .iptname{
+                border: 1px solid silver;
+                width: 120px;
+                height: 15px;
+                padding: 10px 10px;
+                font-size: 16px;
+                z-index: -11;
+            }
+            .tel{
+                border: 1px solid silver;
+                width: 240px;
+                height: 15px;
+                padding: 10px 10px;
+                font-size: 16px;
+                z-index: -11;
+            }
+        }
+        .gender{
+            margin-top: 10px;
+            div{
+                margin-top: 10px;
+                input{
+                    height: 16px;
+                    width: 16px;
+                    cursor: pointer;
+                }
+                #woman{
+                    margin-left: 40px;
+                }
+            }
+        }
+        .birthday{
+            margin-top: 20px;
+            .birthdaylist{
+                margin-top: 10px;
+                form{
+                    display: inline-block;
+                }
+                .year{
+                    height: 40px;
+                    width: 130px;
+                    select{
+                        height: 100%;
+                        width: 100%;
+                        font-size: 16px;
+                        padding: 10px 35px;
+                    }
+                }
+                .mouth{
+                    height: 40px;
+                    width: 80px;
+                    select{
+                        height: 100%;
+                        width: 100%;
+                        font-size: 16px;
+                        padding: 10px 20px;
+                    }
+                }
+                .day{
+                    height: 40px;
+                    width: 80px;
+                    select{
+                        height: 100%;
+                        width: 100%;
+                        font-size: 16px;
+                        padding: 10px 20px;
+                    }
+                }
+            }
+        }
+        .furniture{
+            margin-top: 20px;
+            div{
+                margin-top: 10px;
+                .furniture-style{
+                    height: 40px;
+                    width: 200px;
+                    select{
+                        height: 100%;
+                        width: 100%;
+                        font-size: 16px;
+                        padding: 0px 56px;
+                    }
+                }
+            }
+        }
+        .culture{
+            margin-top: 20px;
+            div{
+                margin-top: 10px;
+                .education{
+                    height: 40px;
+                    width: 200px;
+                    select{
+                        height: 100%;
+                        width: 100%;
+                        font-size: 16px;
+                        padding: 0px 70px;
+                    }
+                }
+            }
+        }
+        .work{
+            margin-top: 20px;
+            div{
+                margin-top: 10px;
+                .industry{
+                    height: 40px;
+                    width: 200px;
+                    select{
+                        height: 100%;
+                        width: 100%;
+                        font-size: 16px;
+                        padding: 0px 56px;
+                    }
+                }
+            }
+        }
+        .site{
+            margin-top: 20px;
+            div{
+                margin-top: 10px;
+                form{
+                    display: inline-block;
+                }
+                .region{
+                    height: 40px;
+                    width: 150px;
+                    select{
+                        height: 100%;
+                        width: 100%;
+                        font-size: 16px;
+                        padding: 0px 31px;
+                    }
+                }
+                .housenumber{
+                    height: 40px;
+                    width: 592px;
+                    border: 1px solid silver;
+                    padding: 0px 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+        .verify{
+            text-align: center;
+            margin-top: 50px;
+            input{
+                height: 60px;
+                width: 400px;
+                color: whitesmoke;
+                font-size: 30px;
+                background: darkgray;
+                cursor: not-allowed;
+            }
+        }
+    }
+    // 我的订单
+    #main-indent{
+        display: none;
+        height: 810px;
+        .maxwidth;
+        margin-top: 40px;
+        margin-left: 90px;
+        #romovenor{
+            position: fixed;
+            height: 180px;
+            width: 473px;
+            z-index: 66;
+            padding: 60px 100px;
+            background: white;
+            left: 36%;
+            top: 30%;
+            border:1px solid #dededd;
+            border-radius: 30px;
+            display: none;
+            h1{
+                font-size: 20px;
+            }
+            div{
+                padding: 30px 60px;
+                input{
+                    height: 60px;
+                    width: 160px;
+                    font-size: 18px;
+                    color: white;
+                    background: #888888;
+                    margin-left: 10px;
+                    &:hover{
+                        background: #82c353;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .introduce{
+            height: 40px;
+            width: 950px;
+            float: left;
+            border: 1px solid silver;
+            .order{
+                margin-left: 20px;
+                float: left;
+                text-align: center;
+                width: 85%;
+                display: flex;
+                justify-content: space-between;
+                p{
+                    height: 80px;
+                    line-height: 80px;
+                    width: 20%;
+                    overflow: hidden;
+                    img{
+                        width: 80px;
+                        height: 50px;
+                    }
+                    span{
+                        display:inline-block;
+                        height: 30px;
+                    }
+                }
+            }
+            > span{
+                margin-left: 70px;
+                line-height: 40px;
+                font-size: 18px;
+            }
+            > div{
+                height: 80px;
+                width: 950px;
+                float: left;
+                border: 1px solid silver;
+                .handle-box{
+                    height: 60px;
+                    width: 100px;
+                    float: right;
+                    margin-top: 10px;
+                    margin-right: 10px;
+                    > div{
+                        height: 30px;
+                        width: 100px;
+                        .find,.aftersale{
+                            float: left;
+                            cursor: pointer;
+                            color: #888888;
+                            text-align: center;
+                            &:hover{
+                                color: cornflowerblue;
+                                text-decoration:underline;
+                            }
+                        }
+                        .handle-abolish{
+                            float: right;
+                            cursor: pointer;
+                            color: #888888;
+                            &:hover{
+                                color: cornflowerblue;
+                                text-decoration:underline;
+                            }
+                        }
+                        .handle-delete{
+                            float: right;
+                            cursor: pointer;
+                            color: #888888;
+                            &:hover{
+                                color: red;
+                                text-decoration:underline;
+                            }
+                        }
+                    }
+                    .handle-box-top{
+                        border-bottom: 1px solid silver;
+                    }
+                }
+            }
+        }
+        .introducebtn{
+            text-align: center;
+            line-height: 800px;
+            input{
+                height: 60px;
+                width: 400px;
+                color: whitesmoke;
+                font-size: 30px;
+                background: darkgray;
+                cursor: pointer;
+                letter-spacing: 20px;
+                &:hover{
+                    background: #7ec711;
+                }
+            }
+        }
+    }
+    // 我的出售
+    #main-sell{
+        display: none;
+        height: 810px;
+        .maxwidth;
+        margin-top: 40px;
+        margin-left: 90px;
+        float: left;
+        .mySell{
+            input{
+                height: 60px;
+                width: 400px;
+                color: whitesmoke;
+                font-size: 30px;
+                background: darkgray;
+                cursor: pointer;
+                &:hover{
+                    background: #7ec711;
+                }
+            }
+        }
+        .sell-introduce-box{
+            margin-top: 20px;
+            .sell-introduce{
+                span{
+                    line-height: 40px;
+                    margin-left: 50px;
+                }
+            }
+             > div{
+                height: 40px;
+                width: 950px;
+                float: left;
+                .operation{
+                    float: right;
+                    height: 80px;
+                    width: 100px;
+                    .operation-top{
+                        height: 40px;
+                        width: 100px;
+                        cursor: pointer;
+                        border-bottom:1px solid #dededd;
+                        > span{
+                            line-height: 40px;
+                            margin-left: 20px;
+                        }
+                    }
+                    .operation-bottom{
+                        height: 40px;
+                        width: 100px;
+                        margin-top: 10px;
+                        .operation-bottom-dell{
+                            float: left;
+                            height: 20px;
+                            width: 50px;
+                            text-align: center;
+                            cursor: pointer;
+                            border-right:1px solid #dededd;
+                        }
+                        .operation-bottom-cancel{
+                            float: right;
+                            height: 40px;
+                            width: 46px;
+                            cursor: pointer;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            height: 40px;
+            width: 950px;
+            float: left;
+            border: 1px solid silver;
+            .sell-introduce1,.sell-introduce2{
+                height: 80px;
+                margin-top: -1px;
+                border:1px solid #dededd;
+                .sale{
+                    float: left;
+                    text-align: right;
+                    width: 85%;
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        height: 80px;
+                        line-height: 80px;
+                        width: 18%;
+                        overflow: hidden;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                        }
+                        span{
+                            display:block;
+                        }
+                    }
+                }
+            }
+            .sell-introduce2{
+                .operation{
+                    .operation-top{
+                        color: #e3e9ef;
+                        cursor: no-drop;
+                    }
+                    .operation-bottom{
+                        .operation-bottom-cancel{
+                            color: #e3e9ef;
+                            cursor: no-drop;
+                        }
+                    }
+                }
+            }
+        }
+        #depreciate{
+            display: none;
+            height: 500px;
+            width: 800px;
+            border-radius: 20px;
+            position: fixed;
+            top: 30%;
+            left: 25%;
+            background: #e3e9ef;
+            .depreciate-content{
+                margin-top: 20px;
+                margin-left: 20px;
+                > span{
+                    font-size: 18px;
+                }
+                .depreciate-content-indent{
+                    color: red;
+                    margin-left: 26px;
+                }
+            }
+            .depreciateprices{
+                height: 350px;
+                width: 650px;
+                margin: 30px auto;
+                background: white;
+                border-radius: 20px;
+                .depreciatenowprice,.depreciatealterprice{
+                    padding: 35px 70px;
+                    span{
+                        font-size: 22px;
+                    }
+                }
+                .depreciatealterprice{
+                    input{
+                        height: 20px;
+                        width: 150px;
+                        padding: 5px 10px;
+                        border: 1px solid #888888;
+                    }
+                }
+                .depreciatebtns{
+                    width: 400px;
+                    height: 60px;
+                    margin-left: 150px;
+                    margin-top: 30px;
+                    input{
+                        height: 50px;
+                        width: 170px;
+                        color: white;
+                        background: #888888;
+                        font-size: 18px;
+                        letter-spacing: 10px;
+                        cursor: pointer;
+                        &:hover{
+                            background: #82c353;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    // 个人账户
+    #main-account{
+        display: none;
+        height: 300px;
+        .maxwidth;
+        margin-top: 40px;
+        margin-left: 90px;
+        float: left;
+        background: #dededd;
+        > span{
+            padding: 0px 30px;
+            line-height: 60px;
+            font-size: 18px;
+        }
+        .main-account-content{
+            height: 88px;
+            width: 825px;
+            margin: auto;
+            padding: 50px;
+            padding-left: 80px;
+            padding-right: 80px;
+            background: white;
+            .account-num{
+                font-size: 50px;
+            }
+            .account-hint{
+                margin-left: 40px;
+            }
+            .rule{
+                float: right;
+                margin-top: 38px;
+                a{
+                    color: cornflowerblue;
+                }
+            }
+        }
+    }
+    // 系统消息
+    #main-information{
+        display: none;
+        height: 470px;
+        .maxwidth;
+        margin-top: 40px;
+        margin-left: 90px;
+        float: left;
+        background: #dededd;
+        > span{
+            padding: 0px 30px;
+            line-height: 60px;
+            font-size: 18px;
+        }
+        .information-content{
+            div{
+                height: 80px;
+                width: 85%;
+                border: 1px solid silver;
+                background: white;
+                margin-left: 30px;
+                margin-top: 10px;
+            }
+            .information{
+                float: left;
+                p{
+                    
+                    margin: 0 50px;
+                    width: 80%;
+                    height: 80px;
+                    line-height: 80px;
+                    text-align: center;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                span{
+                    height: 40px;
+                    line-height: 40px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .information-delete{
+            height: 360px;
+            width: 10%;
+            float: right;
+            margin-top: -360px;
+            div{
+                height: 80px;
+                width: 100%;
+                line-height: 80px;
+                .sign{
+                    height: 16px;
+                    width: 16px;
+                    float: left;
+                    margin-top: 33px;
+                }
+            }
+            .information-delete2,.information-delete3,.information-delete4{
+                margin-top: 10px;
+            }
+
+        }
+        > input{
+            height: 60px;
+            width: 400px;
+            color: whitesmoke;
+            font-size: 30px;
+            background: darkgray;
+            cursor: pointer;
+            letter-spacing: 20px;
+            float: right;
+            margin-top: 100px;
+            &:hover{
+                background: #7ec711;
+            }
+        }
+    }
+    
+}

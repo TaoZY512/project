@@ -1,0 +1,152 @@
+.minwidth{
+    width: 100%;
+    min-width: 1280px;;
+}
+.maxwidth{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.box{
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+#main{
+   .minwidth;
+   .classify_banner{
+       .maxwidth;
+       .box;
+       height: 245px;
+       margin: 60px auto;
+       text-align: center;
+       background: url("../images/classifyBanner_1190dpi.jpg") center center content-box;
+       h1{
+           height:180px;
+           line-height: 245px;
+           color: #fff;
+           text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+           font-weight: bold;
+           font-size: 40px;
+       }
+       .header{
+           width: 100%;
+           height: 40px;
+           line-height: 40px;
+           display: flex;
+           flex-wrap: no-wrap;
+           justify-content: space-around;
+           li{
+               box-sizing: border-box;
+               background: #838280;
+               padding: 2px 25px;
+               color: #fff;
+               height: 40px;
+               font-size: 20px;
+               border-radius: 3px;
+               transition: background-color 0.3s;
+               &:hover{
+                background: #82c353;
+            }
+           }
+           
+       }
+   }
+   .classifyFilter{
+       .maxwidth;
+       .box;
+       position: relative;
+       height: 55px;
+       border-bottom: 1px solid #aaa;
+       ul{
+            line-height: 53px;
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+           .item{
+                width: 120px;
+                text-align: center;
+                border:1px solid transparent;
+                padding: 0 5px;
+                transition:all .5s linear;
+                display: inline-block;
+                color:#5b5b5b;
+                font-size:18px;
+                font-weight:500;   
+                .sub_list{
+                    border-top:1px solid transparent;
+                    width: 120px;
+                    display: none;
+                    li{
+                        border:none;
+                        color:#5b5b5b;
+                        font-size:15px;
+                        font-weight:500;
+                    }
+                    &:hover{
+                        color:#d92018;
+                    }
+                }
+                &:hover{
+                    background: #fff;
+                    border:1px solid #aaa;
+                    color:#d92018;
+                    .sub_list{
+                        display: block;
+                        border-top:1px solid #d92018;
+                        li{
+                            border:none; 
+                            &:hover{
+                                color:#d92018;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+    .good-choose{
+        .maxwidth;
+        .box;
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        section{
+            width: 30%;
+            padding-bottom: 1%;
+            border: 2px solid transparent;
+            img{
+                width: 100%;
+            }
+            &:nth-child(2),&:nth-child(5){
+                margin: 0 3.5%;
+            }
+            &:hover{
+                border-color: #82c353;
+            }
+            p{
+                text-align: center;
+                height: 64px;
+                line-height: 64px;
+                white-space: nowrap;
+                .goodsName{
+                    margin-right: 5px;
+                    font-size: 18px;
+                }
+                .oldprice{
+                    font-size: 22px;
+                    font-weight: bold;
+                    text-decoration: line-through;
+                }
+                .sofaPrice{
+                    font-size: 22px;
+                    font-weight: bold;
+                    color: #d92018;
+                }
+            }
+        }
+        
+    }
+}

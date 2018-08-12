@@ -1,0 +1,109 @@
+main{
+    width: 400px;
+    padding:110px;
+    margin:0 auto;
+    
+    .login-title{
+        font:normal 32px/140% '微软雅黑';
+        margin-bottom:10px;
+        text-align: center;
+    }
+    .gray{
+        color:#888;
+        font: normal 18px/140% "微软雅黑";
+        text-align: center;
+        margin-bottom:50px;
+        a{
+            color: #4375ad;
+            text-decoration: underline;
+        }
+    }
+    p{
+        font: normal 18px/140% "微软雅黑";
+        text-align: left;
+    }
+    input{
+        width: 400px;
+        height: 50px;
+        font-size: 16px;
+        font-family: "微软雅黑";
+        color: #555;
+        border: 1px solid #cccbca;
+        margin:10px 0 30px;
+        padding-left:6px;
+        cursor:pointer;
+        &:focus{
+            border:1px solid rgb(126, 199, 17);
+            box-shadow:0 0 5px 0 rgb(126, 199, 17);
+        }
+    }
+    .forget{
+        text-align: right;
+        a{
+            color:#000;
+            text-decoration: underline;
+            margin-bottom:40px;
+            
+        }
+    }
+    .submit,.submit-login{
+        font:normal 32px/140% '微软雅黑';
+        color:#fff;
+        background-color: #82c353;
+        &:focus{
+            border: 1px solid #cccbca;
+            box-shadow:none;
+            
+        }
+        &:hover{
+            background-color:#97d967;
+        }
+    }
+    .hide{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+    .error{
+        color:red;
+        font-size:12px;
+    }
+}
+aside{
+    
+    width:460px;
+    height:220px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 16px;
+    background: #fff;
+    box-shadow:0 0 10px 0 #aaa;
+    padding:60px 70px;
+    box-sizing: border-box;
+    text-align: center;
+    p{
+        font-size:18px;
+    }
+    input{
+    background-color: #838281;
+    border: none;
+    outline: none;
+    font-family: "微软雅黑";
+    padding:15px 55px;
+    color:#fff;
+    font-size:18px;
+    margin-top:45px;
+    cursor:pointer;
+    &:hover{
+        background-color:#97d967;
+    }
+    }
+    
+
+}
+.hide{
+    display: none;
+}
